@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreenLeaf Enterprises provides sustainable services and community activities.">
+    <title>GreenLeaf Enterprises | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Practical 3: jQuery library, loaded before any code that uses it -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1 id="mainHeading">GreenLeaf Enterprises</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome</h2>
+            <p id="infoText">Click the button below to see a sustainability tip.</p>
+            <button id="tipBtn" type="button">Show next tip</button>
+            <img src="c:\Users\oj310\OneDrive\Pictures\WhatsApp Image 2026-10-27 at 15.22.34.jpeg" width="700" alt="Green plants growing in a sunlit field">
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>GreenLeaf Enterprises was founded to help people and businesses live and work in more sustainable ways. We focus on environmental care, education and community development.</p>
+            <button id="highlightBtn" type="button">Highlight this section</button>
+            <p>To learn how we can help you, visit our <a href="#contact">contact section</a>.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <button id="toggleServicesBtn" type="button">Show/hide services</button>
+            <ul id="servicesList">
+                <li><strong>Environmental consulting:</strong> Advice on reducing waste and energy use.</li>
+                <li><strong>Tree planting:</strong> Planning and planting programmes for schools and communities.</li>
+                <li><strong>Sustainability training:</strong> Workshops for staff and community groups.</li>
+            </ul>
+        </section>
+
+        <section id="activities">
+            <h2>Our Activities</h2>
+            <ol id="activityList"></ol>
+            <button id="showActivitiesBtn" type="button">Show activity count</button>
+            <p id="activityCount"></p>
+
+            <h3>Tree Planning Calculator</h3>
+            <label for="studentCount">Number of students:</label>
+            <input type="number" id="studentCount" min="0">
+            <button id="calcBtn" type="button">Calculate trees</button>
+            <p id="treeResult"></p>
+
+            <video controls width="60%" title="GreenLeaf introduction video">
+                <source src="c:\Users\oj310\Videos\WhatsApp Video 2026-10-27 at 15.30.09.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>Learn more about sustainability on the
+                <a href="https://www.un.org/sustainabledevelopment/" target="_blank" rel="noopener noreferrer">United Nations Sustainable Development website</a>.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <!-- Replace these with the contact details prescribed by your teacher -->
+            <p><strong>Address:</strong> 123 Green Street, Nairobi, Kenya</p>
+            <p><strong>Phone:</strong> <a href="tel:+254700000000">+254 700 000 000</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@greenleaf.co.ke">info@greenleaf.co.ke</a></p>
+
+            <form id="contactForm">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </p>
+                <button type="submit">Send message</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GreenLeaf Enterprises. All rights reserved.</p>
+    </footer>
+
+    <!-- Practical 2 script first, then the jQuery script -->
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
